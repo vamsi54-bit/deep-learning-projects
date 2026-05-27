@@ -1,0 +1,56 @@
+====================================================
+   PNEUMONIA DETECTION - TRAINING RESULTS
+   Model : ResNet18 (Transfer Learning)
+   Device: CPU
+====================================================
+
+Classes: ['NORMAL', 'PNEUMONIA']
+
+----------------------------------------------------
+TRAINING LOG
+----------------------------------------------------
+
+Epoch [1/5]
+  Train Loss          : 0.1244
+  Validation Accuracy : 93.75%
+
+Epoch [2/5]
+  Train Loss          : 0.0605
+  Validation Accuracy : 87.50%
+
+Epoch [3/5]
+  Train Loss          : 0.0584
+  Validation Accuracy : 81.25%
+
+Epoch [4/5]
+  Train Loss          : 0.0455
+  Validation Accuracy : 75.00%
+
+Epoch [5/5]
+  Train Loss          : 0.0468
+  Validation Accuracy : 75.00%
+
+----------------------------------------------------
+BEST VALIDATION ACCURACY : 93.75%  (Epoch 1)
+----------------------------------------------------
+
+----------------------------------------------------
+TEST RESULTS
+----------------------------------------------------
+
+Test Accuracy : 87.02%
+
+Classification Report:
+
+              precision    recall  f1-score   support
+
+      NORMAL       0.94      0.70      0.80       234
+   PNEUMONIA       0.84      0.97      0.90       390
+
+    accuracy                           0.87       624
+   macro avg       0.89      0.84      0.85       624
+weighted avg       0.88      0.87      0.87       624
+
+----------------------------------------------------
+MODEL SAVED : pneumonia_resnet18.pth
+----------------------------------------------------
